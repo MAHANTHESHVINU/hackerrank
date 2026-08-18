@@ -37,6 +37,6 @@ ll = LinkedList()
 ll.add_last(10)
 ll.add_last(20)
 ll.add_last(30)
-ll.add_last(40)
+
 
 ll.display()
