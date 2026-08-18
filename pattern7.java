@@ -1,12 +1,18 @@
 public class pattern7 {
     public static void main(String[] args) {
-        int[] rowStart = {1, 5, 3, 1};
-
-        for (int i = 0; i < 4; i++) {
-            int value = rowStart[i];
-            for (int j = 0; j < 4; j++) {
-                System.out.print(value + " ");
-                value = value == 6 ? 1 : value + 1;
+        for (int i = 1; i <= 4; i++) {
+            if (i == 2) {
+                for (int j = 1; j <= 2; j++) {
+                    System.out.print('a');
+                }
+            } else if (i == 4) {
+                for (int j = 1; j <= 4; j++) {
+                    System.out.print('b');
+                }
+            } else {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(i);
+                }
             }
             System.out.println();
         }
