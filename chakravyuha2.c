@@ -11,25 +11,25 @@ int main()
 
     while (top <= bottom && left <= right)
     {
-        // Left to right
+        
         for (int j = left; j <= right; j++)
             a[top][j] = num++;
 
         top++;
 
-        // Top to bottom
+        
         for (int i = top; i <= bottom; i++)
             a[i][right] = num++;
 
         right--;
 
-        // Right to left
+        
         for (int j = right; j >= left; j--)
             a[bottom][j] = num++;
 
         bottom--;
 
-        // Bottom to top
+        
         for (int i = bottom; i >= top; i--)
             a[i][left] = num++;
 
